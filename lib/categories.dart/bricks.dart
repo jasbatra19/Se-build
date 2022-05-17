@@ -21,7 +21,7 @@ var firestoredb=FirebaseFirestore.instance.collection('bricks').snapshots();
   
     return Scaffold(
       backgroundColor: Color(0xFF191A35),
-      appBar: AppBar(title: Text("Bricks"),
+      appBar: AppBar(title: Text("BUILD"),
       backgroundColor: Color(0xFF191A35),),
       
       body: StreamBuilder(
@@ -74,7 +74,7 @@ var firestoredb=FirebaseFirestore.instance.collection('bricks').snapshots();
                              height: 45,
                              width: 200,
                              color: Colors.black54.withOpacity(1),
-                             child: Text(snapshot.data!.docs[index]['title'],style: TextStyle(fontSize: 20,color: Colors.white),))
+                             child: Text(snapshot.data!.docs[index]['title'],style: TextStyle(fontSize: 15,color: Colors.white),))
                            
                         ],),),
                     ),

@@ -135,7 +135,7 @@ class _LoginState extends State<Login> {
                     alignment: Alignment.center,
                     child: Text(
                       "Log In",
-                      style: TextStyle(fontSize: 30),
+                      style: TextStyle(fontSize: 20),
                       textAlign: TextAlign.center,
                     )),
               ),
