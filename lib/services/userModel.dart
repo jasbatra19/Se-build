@@ -22,7 +22,7 @@ class UserModel {
       'uid': uid,
       'email': email,
       'fname': fname,
-      'secondName': lname,
+      'lname': lname,
     };
   }
 }

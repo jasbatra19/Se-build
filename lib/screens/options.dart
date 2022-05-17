@@ -1,3 +1,4 @@
+import 'package:build/screens/profile.dart';
 import 'package:flutter/material.dart';
 
 class Options extends StatelessWidget {
@@ -27,16 +28,22 @@ class Options extends StatelessWidget {
           scrollDirection: Axis.vertical,
           children: [
             Center(
-              child: Container(
-                height: 50,
-                decoration: BoxDecoration(
-                  color: Color(0xFFDCDCE3),
-                  borderRadius: BorderRadius.circular(5),
+              child: GestureDetector(
+                onTap: (){
+                   Navigator.push(context,
+                          MaterialPageRoute(builder: (context) =>Home()));
+                },
+                child: Container(
+                  height: 50,
+                  decoration: BoxDecoration(
+                    color: Color(0xFFDCDCE3),
+                    borderRadius: BorderRadius.circular(5),
+                  ),
+                  width: MediaQuery.of(context).size.width,
+                  padding: EdgeInsets.fromLTRB(20, 10, 20, 10),
+                  margin: EdgeInsets.fromLTRB(20, 20, 20, 5),
+                  child: Text('My Account',textAlign: TextAlign.center,style: TextStyle(fontSize: 22),),
                 ),
-                width: MediaQuery.of(context).size.width,
-                padding: EdgeInsets.fromLTRB(20, 10, 20, 10),
-                margin: EdgeInsets.fromLTRB(20, 20, 20, 5),
-                child: Text('My Account',textAlign: TextAlign.center,style: TextStyle(fontSize: 22),),
               ),
             ),
             SizedBox(width: 5,height: 5,),

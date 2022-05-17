@@ -1,3 +1,5 @@
+import 'package:build/services/userModel.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 
@@ -15,6 +17,9 @@ class _HomeState extends State<Home> {
         backgroundColor: Color(0xFF191A35),
         appBar: AppBar(
           leading: BackButton(
+            onPressed: (){
+              
+            },
             color: Colors.black,
           ),
           actions: [IconButton(onPressed: (){}, icon:Icon(Icons.home,color: Colors.black,))],
@@ -37,14 +42,19 @@ class _HomeState extends State<Home> {
                 width: MediaQuery.of(context).size.width,
                 child: Row(
                   children: [
-                    Container(
-                      margin: EdgeInsets.only(top: 30),
-                      child: Image(
-                        image: AssetImage(
-                          'assets/Person.png',
+                    GestureDetector(
+                      onTap: ()async{
+                     
+                      },
+                      child: Container(
+                        margin: EdgeInsets.only(top: 30),
+                        child: Image(
+                          image: AssetImage(
+                            'assets/Person.png',
+                          ),
+                          height: 100,
+                          width: 200,
                         ),
-                        height: 100,
-                        width: 200,
                       ),
                     ),
                     Text(
