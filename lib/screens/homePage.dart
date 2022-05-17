@@ -36,7 +36,7 @@ class _HomePageState extends State<HomePage> {
           color: Colors.amber,
           padding: EdgeInsets.all(25),
           margin: EdgeInsets.all(20),
-          child: Text("Add products",style: TextStyle(color: Colors.black,fontSize: 40,fontWeight: FontWeight.bold),textAlign: TextAlign.center,),),
+          child: Text("Add products",style: TextStyle(color: Colors.black,fontSize: 25,fontWeight: FontWeight.bold),textAlign: TextAlign.center,),),
         ),
 
         GestureDetector(
@@ -49,7 +49,7 @@ class _HomePageState extends State<HomePage> {
           color: Colors.amber,
           padding: EdgeInsets.all(25),
           margin: EdgeInsets.all(20),
-          child: Text("View products",style: TextStyle(color: Colors.black,fontSize: 40,fontWeight: FontWeight.bold),textAlign: TextAlign.center,),),
+          child: Text("View products",style: TextStyle(color: Colors.black,fontSize: 25,fontWeight: FontWeight.bold),textAlign: TextAlign.center,),),
         ),
       ],),
     );

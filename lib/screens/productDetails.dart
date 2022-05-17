@@ -34,7 +34,7 @@ class _ProductDetailsState extends State<ProductDetails> {
         Container(
           width: MediaQuery.of(context).size.width,
           color: Colors.white,
-          child: Text(widget.title,style: TextStyle(fontSize: 50,fontWeight: FontWeight.bold,),textAlign: TextAlign.center,)),
+          child: Text(widget.title,style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold,),textAlign: TextAlign.center,)),
            Container(
                width: MediaQuery.of(context).size.width,
           color: Colors.white,
@@ -53,6 +53,7 @@ class _ProductDetailsState extends State<ProductDetails> {
           ),
         ),
         Container(
+          padding: EdgeInsets.all(20),
           margin: EdgeInsets.only(top:20),
           child: Text("DESCRIPTION",style: TextStyle(fontSize: 25,fontWeight: FontWeight.w800,color: Colors.white))),
         Text(widget.desc,style: TextStyle(fontSize: 20,fontWeight: FontWeight.w600,color: Colors.white),),

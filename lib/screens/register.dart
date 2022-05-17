@@ -255,7 +255,7 @@ class _RegisterState extends State<Register> {
                     alignment: Alignment.center,
                     child: Text(
                       "Sign Up",
-                      style: TextStyle(fontSize: 30),
+                      style: TextStyle(fontSize: 20),
                       textAlign: TextAlign.center,
                     )),
               ),
