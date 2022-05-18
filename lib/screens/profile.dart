@@ -1,3 +1,5 @@
+import 'package:build/screens/homePage.dart';
+import 'package:build/screens/options.dart';
 import 'package:build/services/userModel.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -18,11 +20,18 @@ class _HomeState extends State<Home> {
         appBar: AppBar(
           leading: BackButton(
             onPressed: (){
+                Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(builder: (context) => Options()));
               
             },
             color: Colors.black,
           ),
-          actions: [IconButton(onPressed: (){}, icon:Icon(Icons.home,color: Colors.black,))],
+          actions: [IconButton(onPressed: (){
+              Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(builder: (context) => HomePage())
+                );
+
+          }, icon:Icon(Icons.home,color: Colors.black,))],
           // centerTitle: true,
           title: Text(
             'Profile',
