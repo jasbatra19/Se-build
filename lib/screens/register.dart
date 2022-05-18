@@ -121,7 +121,7 @@ class _RegisterState extends State<Register> {
         },
         textInputAction: TextInputAction.next,
               decoration: InputDecoration(
-                  labelText: "Password",
+                  hintText: "Password",
                   prefixIcon: Icon(Icons.password_rounded)),
             );
     final checkPasswordField=TextFormField(
@@ -140,7 +140,7 @@ class _RegisterState extends State<Register> {
         },
         textInputAction: TextInputAction.done,
               decoration: InputDecoration(
-                  labelText: "Confirm Password",
+                  hintText: "Confirm Password",
                   prefixIcon: Icon(Icons.password_rounded)),
             );
 

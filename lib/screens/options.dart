@@ -1,3 +1,4 @@
+import 'package:build/screens/homePage.dart';
 import 'package:build/screens/profile.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +12,8 @@ class Options extends StatelessWidget {
       appBar: AppBar(
         leading: BackButton(color: Colors.black,
         onPressed: (){
-          
+            Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(builder: (context) => HomePage()));
         }
         ,),
           title: Text(
@@ -104,16 +106,18 @@ class Options extends StatelessWidget {
             ),
             SizedBox(width: 5,height: 5,),
             Center(
-              child: Container(
-                height: 50,
-                decoration: BoxDecoration(
-                  color: Color(0xFFDCDCE3),
-                  borderRadius: BorderRadius.circular(5),
+              child: GestureDetector(
+                child: Container(
+                  height: 50,
+                  decoration: BoxDecoration(
+                    color: Color(0xFFDCDCE3),
+                    borderRadius: BorderRadius.circular(5),
+                  ),
+                  width: MediaQuery.of(context).size.width,
+                  padding: EdgeInsets.fromLTRB(20, 10, 20, 10),
+                  margin: EdgeInsets.fromLTRB(20, 5, 20, 5),
+                  child: Text('Login/SignUp',textAlign: TextAlign.center,style: TextStyle(fontSize: 22),),
                 ),
-                width: MediaQuery.of(context).size.width,
-                padding: EdgeInsets.fromLTRB(20, 10, 20, 10),
-                margin: EdgeInsets.fromLTRB(20, 5, 20, 5),
-                child: Text('Login/SignUp',textAlign: TextAlign.center,style: TextStyle(fontSize: 22),),
               ),
             ),
             SizedBox(width: 5,height: 5,),

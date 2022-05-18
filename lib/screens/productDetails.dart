@@ -43,6 +43,8 @@ class _ProductDetailsState extends State<ProductDetails> {
           
         GestureDetector(
           onTap: (){
+            const snackbar=SnackBar(content: Text('Added to cart successfully'),);
+            ScaffoldMessenger.of(context).showSnackBar(snackbar);
             
           },
           child: Container(
